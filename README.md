@@ -1,4 +1,5 @@
-A Godot 4.x demo project for a tactical 2D RPG.
+Expansion of the engine created by HopeMetal: https://github.com/HopeMetal/2DTacticalRPGDemo under MIT license.    
+A Godot 4.x 2D tactical engine.
 
 ## Features
 * Setup combatant and skill definitions in databases using Autoloads
@@ -40,7 +41,7 @@ Both databases are represets as dictionary defined in ```combat\resources\**Defi
 -  name = ""
 - group("Class")
 - enum("Melee", "Ranged", "Magic") var class_t = 0
-- enum("Ground", "Flying", "Mounted") var class_m = 0
+- enum("Ground", "Flying", "Mounted") var class_m = 0  - Use mounted class or flying
 - group("Stats")
 - range(1, 2, 1, "or_greater") var max_hp = 1
 - range(1, 3, 1, "or_greater") var movement = 3
@@ -54,7 +55,7 @@ Both databases are represets as dictionary defined in ```combat\resources\**Defi
 - group("Skills")
 -  skills: Array[String]
 
-# Camera Controls and Behavior
+### Camera Controls and Behavior
 
 The camera in this 2D tactic engine can be controlled using the following methods:
 
