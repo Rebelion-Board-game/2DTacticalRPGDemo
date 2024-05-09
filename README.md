@@ -64,3 +64,14 @@ The camera in this 2D tactic engine can be controlled using the following method
 - **Middle Mouse Button**: Holding down the middle mouse button and moving the mouse allows for panning the camera in any direction.
 
 Additionally, at the beginning of every turn of every unit, the camera receives a signal from `Combat.gd` indicating the start of a new unit's turn. Upon receiving this signal, the camera automatically centers itself on the current active unit, ensuring that players have optimal visibility of their unit's surroundings during their turn.
+
+### Method: add_combatant
+
+#### Description:
+This method adds a combatant to the game environment, placing it on the specified side of the battlefield at the given position. It also initializes the necessary visual representation for the combatant.
+
+#### Parameters:
+- **combatant (Dictionary)**: A dictionary containing information about the combatant, such as its attributes and skills.
+- **side (int)**: An integer representing the side of the battlefield on which the combatant will be placed.
+- **position (Vector2i)**: A 2D vector representing the position where the combatant will be placed on the battlefield grid.
+- **scale (Vector2, optional)**: An optional 2D vector specifying the scale of the combatant's visual representation. Default value is `Vector2(1, 1)`.
