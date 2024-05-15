@@ -75,3 +75,6 @@ This method adds a combatant to the game environment, placing it on the specifie
 - **side (int)**: An integer representing the side of the battlefield on which the combatant will be placed.
 - **position (Vector2i)**: A 2D vector representing the position where the combatant will be placed on the battlefield grid.
 - **scale (Vector2, optional)**: An optional 2D vector specifying the scale of the combatant's visual representation. Default value is `Vector2(1, 1)`.
+
+### Skill function
+Skill function are added in ```combat.gd```
